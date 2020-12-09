@@ -1,0 +1,478 @@
+@media (max-width: 992px) {
+  html{
+    overflow-x: hidden;
+    position: relative;
+  }
+  html ::-webkit-scrollbar {
+    display: none;
+  }
+  html{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* MODAL LOGIN*/
+	.modal-login .modal-dialog .modal-content{
+		width: 600px;
+		height: 450px;
+		background-color: #F4F4F2;
+		top: 100px;
+		right: 50px;
+		border: 1px solid F4F4F2;
+    border-radius: 0;
+	}
+
+	/* Header */
+	.modal-login .modal-header{
+		border: 0 solid #F4F4F2;
+		margin-bottom: 0px;
+		margin-left: 48px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		font-family: 'Nunito Sans', sans-serif;
+	}
+	.modal-login .modal-header h5{
+		font-size: 27px;
+		font-weight: 700;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	.modal-login .modal-header h5 a{
+		text-decoration: none;
+	}
+	.modal-login .modal-header .login{
+		font-style: italic;
+		font-weight: 900;
+		width: 250px;
+	}
+	.modal-login .modal-header .login a{
+		color: rgb(73, 84, 100);
+	}
+	.modal-login .modal-header .register{
+		width: 250px;
+		cursor: pointer;
+	}
+	.modal-login .modal-header .register a{
+		color: rgba(73, 84, 100, .7);
+	}
+	.modal-login .modal-header .register a:hover{
+		color: rgb(73, 84, 100)
+	}
+	.modal-login .modal-header .close{
+		margin-left: 0px;
+		border: none;
+	}
+	.modal-login .modal-header button:active{
+		border: 0;
+		outline: none;
+	}
+	.modal-login .modal-header button:visited{
+		border: 0;
+		outline: none;
+	}
+	.modal-login .modal-header button:focus{
+		border: 0;
+		outline: none;
+	}
+
+	/* HR */
+	.modal-login  hr{
+		border-top: 5px solid #495464;
+		width: 500px;
+		margin-top: 0px;
+	}
+
+	/* Body */
+	.modal-login .modal-body{
+		border: 0 solid #F4F4F2;
+		padding-bottom: 60px;
+		height: 220px;
+	}
+	.modal-login .modal-body form{
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	.modal-login .modal-body .col-form-label{
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 18px;
+		font-weight: 800;
+		color: #495464;
+	}
+	.modal-login .modal-body input{
+		border-radius: 0px;
+		outline: none;
+	}
+
+	/* Footer */
+	.modal-login .modal-footer{
+		border: 0 solid #F4F4F2;
+		padding-top: 0px;
+		height: 120px;
+	}
+	.modal-login .modal-footer button{
+		margin: 0px;
+		width: 150px;
+		height: 50px;
+		background-color: rgba(73, 84, 100, .8);
+		color: #F4F4F2;
+		border-radius: 0px;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 32px;
+		font-weight: 800;
+		line-height: 32px;
+		text-decoration: none;
+		border: 0 solid rgb(73, 84, 100);
+		transition: .3s;
+		outline: rgba(73, 84, 100, 1);
+	}
+	.modal-login .modal-footer button:hover{
+		background-color: rgba(73, 84, 100, 1);
+		color: #F4F4F2;
+	}
+	.modal-login .modal-footer button:visited{
+		background-color: rgba(73, 84, 100, .9);
+		color: #F4F4F2;
+		text-decoration: none;
+		border: none;
+		outline: rgba(73, 84, 100, 1);
+	}
+	.modal-login .modal-footer button:focus{
+		color: #F4F4F2;
+		border: 0;
+		outline: none;
+	}
+	.modal-login .modal-footer button:active{
+		color: #F4F4F2;
+		outline: none;
+		border: none;
+	}
+	.modal-login .modal-footer.member-login-forgot{
+		height: 50px;
+	}
+	.modal-login .modal-footer a{
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 18px;
+		font-weight: bold;
+		font-style: italic;
+		color: black;
+		transition: .2s;
+	}
+	.modal-login .modal-footer a:hover{
+		text-decoration: none;
+		color: red;
+	}
+
+	/* MODAL REGISTER*/
+	.modal-register .modal-dialog .modal-content{
+		width: 600px;
+		height: 600px;
+		background-color: #F4F4F2;
+		top: 100px;
+		right: 50px;
+		border: 1px solid F4F4F2;
+    border-radius: 0;
+	}
+
+	/* Header */
+	.modal-register .modal-header{
+		border: 0 solid #F4F4F2;
+		margin-bottom: 0px;
+		margin-left: 48px;
+		padding-bottom: 10px;
+		padding-left: 0px;
+		font-family: 'Nunito Sans', sans-serif;
+	}
+	.modal-register .modal-header h5{
+		font-size: 27px;
+		font-weight: 700;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	.modal-register .modal-header h5 a{
+		text-decoration: none;
+	}
+	.modal-register .modal-header .login{
+		width: 250px;
+		cursor: pointer;
+	}
+	.modal-register .modal-header .login a{
+		color: rgba(73, 84, 100, .7);
+	}
+	.modal-register .modal-header .login a:hover{
+		color: rgb(73, 84, 100)
+	}
+	.modal-register .modal-header .register{
+		font-style: italic;
+		font-weight: 900;
+		width: 250px;
+	}
+	.modal-register .modal-header .register a{
+		color: rgb(73, 84, 100);
+	}
+	.modal-register .modal-header .close{
+		margin-left: 0px;
+		border: none;
+	}
+	.modal-register .modal-header button:active{
+		border: 0;
+		outline: none;
+	}
+	.modal-register .modal-header button:visited{
+		border: 0;
+		outline: none;
+	}
+	.modal-register .modal-header button:focus{
+		border: 0;
+		outline: none;
+	}
+
+	/* HR */
+	.modal-register hr{
+		border-top: 5px solid #495464;
+		width: 500px;
+		margin-top: 0px;
+
+		/* Body */
+  }
+
+  /* Body */
+	.modal-register .modal-body{
+		border: 0 solid #F4F4F2;
+		padding-bottom: 0px;
+		height: 220px;
+	}
+	.modal-register .modal-body form{
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	.modal-register .modal-body .col-form-label{
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 18px;
+		font-weight: 800;
+		color: #495464;
+	}
+	.modal-register .modal-body input{
+		border-radius: 0px;
+		outline: none;
+	}
+
+	/* Footer */
+	.modal-register .modal-footer{
+		border: 0 solid #F4F4F2;
+		padding-top: 0px;
+		height: 120px;
+	}
+	.modal-register .modal-footer button{
+		margin: 0px;
+		width: 150px;
+		height: 50px;
+		background-color: rgba(73, 84, 100, .8);
+		color: #F4F4F2;
+		border-radius: 0px;
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 32px;
+		font-weight: 800;
+		line-height: 32px;
+		text-decoration: none;
+		border: 0 solid rgb(73, 84, 100);
+		transition: .3s;
+		outline: rgba(73, 84, 100, 1);
+	}
+	.modal-register .modal-footer button:hover{
+		color: #F4F4F2;
+		background-color: rgba(73, 84, 100, 1);
+	}
+	.modal-register .modal-footer button:visited{
+		color: #F4F4F2;
+		background-color: rgba(73, 84, 100, .9);
+		text-decoration: none;
+		border: none;
+		outline: rgba(73, 84, 100, 1);
+	}
+	.modal-register .modal-footer button:focus{
+		color: #F4F4F2;
+		border: 0;
+		outline: none;
+	}
+	.modal-register .modal-footer button:active{
+		color: #F4F4F2;
+		outline: none;
+		border: none;
+	}
+
+  /* NAVBAR */
+  .navbar{
+    top: -10px;
+    height: 80px;
+  }
+  .navbar-brand{
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+  }
+  .navbar .header-1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 27px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .navbar .header-2 .nav-link{
+    margin-left: 10px;
+    transition: .3s;
+    cursor: pointer;
+  }
+  .nav-catalogue-page{
+    background-color: rgba(63, 62, 62, 1);
+  }
+
+  .navbar-collapse{
+    background-color: rgba(63, 62, 62, .7);
+  }
+
+  /* TEXT SHADOW */
+  .navbar .navbar-brand,
+  .jumbotron .header-1{
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+  }
+  .navbar .nav-link{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  .jumbotron .header-2{
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  /* JUMBOTRON */
+  .jumbotron{
+    background-image: url(./IMG/IMG_6511.JPG);
+    background-size: cover;
+    height: 320px;
+    margin-bottom: 0px;
+  }
+  .jumbotron .container{
+    position: relative;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  .jumbotron .container{
+    padding-top: 100px;
+  }
+  .jumbotron .header-1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 53px;
+    margin-bottom: none;
+  }
+  .jumbotron .header-2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    margin-top: -20px;
+  }
+
+  /* Collection */
+  .collection{
+    position: relative;
+    height: 800px;
+    padding-top: 40px;
+    background-color: #BBBFCA;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 65px;
+  }
+  .collection h3{
+    font-size: 30px;
+    color: #F4F4F2;
+    text-shadow: 1px 1px 2px black;
+    padding-bottom: 50px;
+  }
+  .collection img{
+    position: relative;
+    width: 400px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: .3s;
+  }
+  .collection img:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+  }
+  .collection img:hover + p{
+    transform: scale(1.1);
+  }
+  .collection .col a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+  }
+  .collection .spring{
+    margin-bottom: 50px;
+  }
+  .collection .spring p{
+    position: absolute;
+    left: 90px;
+    bottom: 0px;
+    text-shadow: 1px 1px 5px black;
+    transition: .3s;
+    font-size: 30px;
+  }
+  .collection .fall p{
+    position: absolute;
+    left: 120px;
+    bottom: 0px;
+    text-shadow: 1px 1px 5px black;
+    transition: .3s;
+    font-size: 30px;
+  }
+
+  /* FOOTER */
+  .footer{
+    height: 100px;
+    background-color: #495464;
+    padding-top: 10px;
+    color:  #F4F4F2;
+    overflow: hidden;
+  }
+  .footer h4{
+    margin-left: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 9px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    text-align: left;
+  }
+  .footer h4 span{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .footer .contact{
+    font-family: 'Nunito Sans', sans-serif;
+    white-space: nowrap;
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+  .footer .contact-header{
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 0px;
+  }
+  .footer .bangjo{
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  .footer .contact-address{
+    margin-bottom: 0px;
+    font-weight: 500;
+    font-size: 10px;
+  }
+}
+
+
+
+

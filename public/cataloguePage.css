@@ -1,0 +1,332 @@
+@media (min-width: 992px) {
+    html{
+      position: relative;
+    }
+    html ::-webkit-scrollbar {
+      display: none;
+    }
+    html{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+      body{
+      background-color: #BBBFCA;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+  
+    /* Erase Arrow in Input Field */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  
+    /* CART SIDEBAR */
+    /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(255, 255, 255, 1); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: 'Nunito Sans', sans-serif;;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #818181;
+    transition: 0.3s;
+  }
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 30px;
+    margin-top: 15px;
+    font-size: 25px;  
+    padding-left: 12px;
+    padding-top: 3px;
+    background-color: red;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  /* Header */
+  .sidenav .header{
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 70px;
+    margin-left: 10px;
+  }
+  .sidenav h4 {
+    display: inline;
+    font-family: 'Fredoka One', cursive;
+    padding: 8px 8px 8px 8px;
+    font-size: 25px;
+    color: #4e4d4d;
+    transition: 0.3s; 
+  }
+  /* Body */
+  .sidenav .body{
+    width: 800px;
+    height: 500px;
+    margin-left: 20px;
+    display: inline-block;
+    font-family: 'Nunito sans', cursive;
+  }
+  .body .product-name,
+  .body .single-price,
+  .body button,
+  .body input,
+  .body .result{
+    display: inline-block;
+    margin: 0px;
+  }
+  .sidenav .body h5.product-name{
+    min-width: 200px !important;
+  }
+  .sidenav .body .single-price{
+    width: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .sidenav .body button{
+    margin: 0px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+  }
+  .sidenav .body .minus-item{
+    background-color: red;
+  }
+  .sidenav .body input{
+    width: 40px;
+    text-align: center;
+  }
+  .sidenav .body .plus-item{
+    margin-right: 20px;
+  }
+  .sidenav .body .delete-item{
+    margin-right: 20px;
+  }
+  /* Footer */
+  .sidenav .footer{
+    margin-left: 20px;
+  }
+  .sidenav .all-button{
+    padding: 5px;
+    display: inline-block;
+  }
+  .sidenav .all-button button{
+    margin-top: 0px;
+  }
+  .sidenav .cartButton{
+    background-color: #495464;
+    border-radius: 0%;
+    width: 130px;
+    height: 40px;
+    background-color: #495464;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .sidenav .clearcartButton{
+    border-radius: 0%;
+    width: 130px;
+    height: 40px;
+    background-color: red;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    
+  }
+  .sidenav .total{
+    display: inline;
+    margin-left: 170px;
+    padding: 8px;
+    color: #495464;
+    width: 175px;
+    height: 40px;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .show-cart{
+    color:  #495464;
+    font-family: 'Nunito sans', cursive;
+    font-weight: bold;
+    border: none;
+    margin-left: 10px;
+  }
+  .sidenav .delete-item{
+    border-radius: 0px;
+    padding-right: 12px;
+    background-color: red;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .sidenav .clear-cart{
+    margin-top: 20px;
+  }
+  .sidenav .total{
+    font-size: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+    /* NAVBAR */
+      .navbar{
+      top: -10px;
+      height: 80px;
+      z-index: 2;
+      background-color: #495464;
+      }
+      .navbar-brand{
+          font-family: 'Fredoka One', cursive;
+          font-size: 50px;
+    }
+    .navbar .home-button{
+      cursor: pointer;
+    }
+      .navbar .header-1{
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: 27px;
+          margin-left: 30px;
+          font-weight: bold;
+      }
+      .navbar .nav-catalogue-top{
+          margin-left: 20px;
+    }
+    .navbar .nav-catalogue-bottom{
+          margin-left: 20px;
+    }
+    .navbar .header-1 .nav-link{
+      transition: .3s;
+    }
+    .navbar .header-1 .nav-link:hover{
+      transform: scale(1.05);
+    }
+      .navbar .header-2 .nav-link{
+          margin-left: 20px;
+          transition: .3s;
+          cursor: pointer;
+      }
+      .navbar .header-2 .nav-link:hover{
+      transform: scale(1.2);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+      .navbar .navbar-brand{
+          text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+      }
+      .navbar .nav-link{
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
+  
+    /* CATALOGUE */
+    .catalogue{
+      position: relative;
+      z-index: 1;
+      height: 1300px;
+      padding-top: 100px;
+      margin-left: 50px;
+    }
+    .catalogue h3{
+      font-family: 'Fredoka One', cursive;
+      font-size: 40px;
+      color: #F4F4F2;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      margin-bottom: 0px;
+    }
+    .catalogue .top hr{
+      border-top: 5px solid #495464;
+          width: 100px;
+      margin-top: 5px;
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    .catalogue .product-preview{
+      cursor: pointer;
+    }
+    .catalogue a{
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    .catalogue img{
+      height: 350px;
+      border-radius: 3px;
+      margin-bottom: 20px;
+      transition: .2s;
+      box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .catalogue img:hover{
+      transform: scale(1.03);
+    }
+    .catalogue h5{
+      font-weight: 800;
+      font-size: 24px;
+    }
+    .catalogue h6{
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .catalogue button{
+      width: 60px;
+      height: 30px;
+      background-color: #495464;
+      font-family: 'Fredoka One', cursive;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      transition: .2s;
+    }
+    .catalogue button:hover{
+      transform: scale(1.03);
+    }
+    .catalogue button a{
+      color: rgba(255, 255, 255, 0.857);
+    }
+    .catalogue .top-oxford{
+      margin-top: 30px;
+    }
+    .catalogue .bottom{
+      margin-top: 80px;
+      padding-bottom: 100px;
+    }
+    .catalogue .bottom hr{
+      border-top: 5px solid #495464;
+          width: 170px;
+      margin-top: 5px;
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    .catalogue .bottom-ankle{
+      margin-top: 30px;
+    }
+  }

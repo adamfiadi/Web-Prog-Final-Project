@@ -1,0 +1,319 @@
+@media (max-width: 992px) {
+    html{
+      position: relative;
+    }
+    html ::-webkit-scrollbar {
+      display: none;
+    }
+    html{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+    body{
+      background-color: #BBBFCA;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+  
+  /* Erase Arrow in Input Field */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  input[type=radio] {
+    width: 20px;
+    height: 10px;
+  }
+  
+    /* NAVBAR */
+    .navbar{
+      top: -10px;
+      height: 80px;
+      }
+      .navbar-brand{
+          font-family: 'Fredoka One', cursive;
+          font-size: 25px;
+    }
+  
+    .navbar-collapse{
+      background-color: rgba(63, 62, 62, 1);
+    }
+  
+    .navbar .home-button{
+      cursor: pointer;
+    }
+      .navbar .header-1{
+          font-family: 'Nunito Sans', sans-serif;
+          font-size: 27px;
+          margin-left: 30px;
+          font-weight: bold;
+      }
+    .navbar .header-1 .nav-link{
+      transition: .3s;
+    }
+    .navbar .header-1 .nav-link:hover{
+      transform: scale(1.05);
+    }
+      .navbar .header-2 .nav-link{
+          margin-left: 20px;
+          transition: .3s;
+          cursor: pointer;
+      }
+      .navbar .header-2 .nav-link:hover{
+      transform: scale(1.05);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+    .navbar.scrolled{
+      background-color: #495464;
+      transition: background-color 200ms linear;
+    }
+    .nav-catalogue-page{
+      background-color: rgba(63, 62, 62, 1);
+    }
+      .navbar .navbar-brand{
+          text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+      }
+      .navbar .nav-link{
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      }
+      
+  
+      /* CATALOGUE */
+    .catalogue{
+      height: 1000px;
+      padding-top: 100px;
+      margin-left: 50px;
+    }
+    .catalogue h3{
+      font-family: 'Fredoka One', cursive;
+      font-size: 30px;
+      color: #F4F4F2;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      margin-bottom: 0px;
+    }
+    .catalogue .top hr{
+      border-top: 5px solid #495464;
+      width: 75px;
+      margin-top: 5px;
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    .catalogue a{
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.8);
+    }
+    .catalogue img{
+      height: 100px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      transition: .2s;
+      box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .catalogue img:hover{
+      transform: scale(1.03);
+    }
+    .catalogue h5{
+      font-weight: 800;
+      font-size: 12px;
+    }
+    .catalogue h6{
+      font-weight: 600;
+      font-size: 10px;
+    }
+    .catalogue .top-oxford{
+      margin-top: 30px;
+    }
+    .catalogue .bottom{
+      margin-top: 80px;
+      padding-bottom: 100px;
+    }
+    .catalogue .bottom hr{
+      border-top: 5px solid #495464;
+      width: 125px;
+      margin-top: 5px;
+      margin-left: 0px;
+      margin-bottom: 30px;
+    }
+    .catalogue .bottom-ankle{
+      margin-top: 30px;
+    }
+  
+    .catalogue button{
+      width: 60px;
+      height: 30px;
+      background-color: #495464;
+      font-family: 'Fredoka One', cursive;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      transition: .2s;
+    }
+  
+    .catalogue button:hover{
+      transform: scale(1.03);
+    }
+    .catalogue button a{
+      color: rgba(255, 255, 255, 0.857);
+    }
+  
+      /* CART SIDEBAR */
+    /* The side navigation menu */
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.857); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: 'Nunito Sans', sans-serif;;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 32px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav h4 {
+    padding: 8px 32px 8px 8px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav .cartButton{
+    background-color: #495464;
+    border-radius: 0%;
+    width: 90px;
+    height: 40px;
+    background-color: #495464;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    margin-left: 300px;
+    
+  }
+  
+  .sidenav .clearcartButton{
+    border-radius: 0%;
+    width: 120px;
+    height: 40px;
+    background-color: red;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 300px;
+    
+  }
+  
+  .sidenav .total{
+    margin: 30px 60px;
+    padding: 8px;
+    color: #495464;
+    width: 175px;
+    height: 40px;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    margin-left: 575px;
+    margin-top: -50px;
+  
+  }
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    color: white;
+    top: 30;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 60px;
+    padding-left: 35px;
+    background-color: red;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    
+  }
+  
+  .sidenav .show-cart{
+  
+    color:  #495464;
+    font-family: 'Nunito sans', cursive;
+    font-weight: bold;
+    border: none;
+    margin-left: 300px;
+    font-size: 14px;
+    width: 50px;
+  }
+  
+  .sidenav .delete-item{
+    border-radius: 0px;
+    padding-right: 12px;
+    background-color: red;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  
+  
+  .sidenav .minus-item{
+    padding-right: 12px;
+    margin-bottom: 10px;
+    border-radius: 0%;
+    background-color: blue;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    
+  }
+  
+  .sidenav .plus-item{
+    margin-top: 10px;
+    padding-right: -10px;
+    border-radius: 0%;
+    background-color: blue;
+    font-family: 'Fredoka One', cursive;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidenav .item-count{
+    width: 50px;
+    
+  }
+  
+  .sidenav .clear-cart{
+    margin-top: 20px;
+  }
+  
+  }
+  
+  
+  

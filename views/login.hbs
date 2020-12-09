@@ -1,0 +1,178 @@
+<!doctype html>
+<html id="loginPage" lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <title>Bajoe.id</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!-- Original CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styleMobile.css">
+
+</head>
+
+<body>
+
+    <!-- MODAL LOGIN START -->
+    <div class="modal modal-login" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title login"><a href="#">login</a></h5>
+                    <h5 class="modal-title register" id="registerLabel"><a id="registerButton">register</a></h5>
+                    <button type="button" class="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <hr>
+                <div class="modal-body">
+                    <form action="/auth/login" method="POST">
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">email</label>
+                            <input type="text" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="col-form-label">password</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        <div class="modal-footer button justify-content-center">
+                            <button type="submit" class="button btn">masuk.</button>
+                        </div>
+                    </form>
+                </div>
+                {{#if message }}
+                <h4 class="alert alert-danger mt-4">{{message}}</h4>
+                {{/if}}
+
+                {{#if messagegreen }}
+                <h4 class="alert alert-success mt-4">{{messagegreen}}</h4>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+    <!-- MODAL LOGIN END -->
+
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">bajoe.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="header-1 navbar-nav">
+                    <a class="nav-catalogue text-white nav-link active" href="#">catalogue</a>
+                    <a class="nav-promotion text-white nav-link active" href="#">promotions</a>
+                </div>
+                <div class="header-2 navbar-nav ml-auto">
+                    <a class="nav-link" id="profileIcon"><img src="./IMG/png/010-profile.png" alt="Profile"
+                            class="icon-1" width="40px" height="40px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- SLIDER START -->
+    <div id="sliderHome" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#sliderHome" data-slide-to="0" class="active"></li>
+            <li data-target="#sliderHome" data-slide-to="1"></li>
+            <li data-target="#sliderHome" data-slide-to="2"></li>
+            <li data-target="#sliderHome" data-slide-to="3"></li>
+        </ol>
+        <div class="slider-inner">
+            <div class="carousel-item slider-1 active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="header-1 display-4 text-white">summertime</h1>
+                    <h3 class="header-2 display-4 text-white">is meant to fallin love.</h3>
+                </div>
+            </div>
+            <div class="carousel-item slider-2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="header-2 display-4 text-white">see you later...</h1>
+                    <h3 class="header-1 display-4 text-white">space cowboy.</h3>
+                </div>
+            </div>
+            <div class="carousel-item slider-3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="header-1 display-4 text-white">get dirty</h1>
+                    <h3 class="header-2 display-4 text-white">or go home.</h3>
+                </div>
+            </div>
+            <div class="carousel-item slider-4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="header-2 display-4 text-white">show off your</h1>
+                    <h3 class="header-1 display-4 text-white">assets.</h3>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#sliderHome" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#sliderHome" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- SLIDER END -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Original JavaScript -->
+    <script>
+        $(document).ready(function () {
+            $('#loginModal').addClass('fade');
+
+            $('#loginModal').modal({
+                backdrop: 'static',
+                keyboard: false
+            });
+
+            $('#loginModal').modal('show');
+
+            $('.close').click(function () {
+                $('#loginModal').modal('hide');
+                window.location.href = "/"
+            });
+
+            $('#registerButton').click(function () {
+                $('#loginModal').modal('hide');
+                window.location.href = "/register"
+            });
+        });
+    </script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+  html{
+    position: relative;
+  }
+  html ::-webkit-scrollbar {
+    display: none;
+  }
+  html{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+    /* MODAL LOGIN*/
+    .modal-login .modal-dialog .modal-content{
+      width: 600px;
+      height: 450px;
+      background-color: #F4F4F2;
+      top: 100px;
+      right: 50px;
+      border: 1px solid F4F4F2;
+      border-radius: 0;
+    }
+  
+    /* Header */
+    .modal-login .modal-header{
+      border: 0 solid #F4F4F2;
+      margin-bottom: 0px;
+      margin-left: 48px;
+      padding-bottom: 10px;
+      padding-left: 0px;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .modal-login .modal-header h5{
+      font-size: 27px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .modal-login .modal-header h5 a{
+      text-decoration: none;
+    }
+    .modal-login .modal-header .login{
+      font-style: italic;
+      font-weight: 900;
+      width: 250px;
+    }
+    .modal-login .modal-header .login a{
+      color: rgb(73, 84, 100);
+    }
+    .modal-login .modal-header .register{
+      width: 250px;
+      cursor: pointer;
+    }
+    .modal-login .modal-header .register a{
+      color: rgba(73, 84, 100, .7);
+    }
+    .modal-login .modal-header .register a:hover{
+      color: rgb(73, 84, 100)
+    }
+    .modal-login .modal-header .close{
+      margin-left: 0px;
+      border: none;
+    }
+    .modal-login .modal-header button:active{
+      border: 0;
+      outline: none;
+    }
+    .modal-login .modal-header button:visited{
+      border: 0;
+      outline: none;
+    }
+    .modal-login .modal-header button:focus{
+      border: 0;
+      outline: none;
+    }
+  
+    /* HR */
+    .modal-login  hr{
+      border-top: 5px solid #495464;
+      width: 500px;
+      margin-top: 0px;
+    }
+  
+    /* Body */
+    .modal-login .modal-body{
+      border: 0 solid #F4F4F2;
+      padding-bottom: 60px;
+      height: 220px;
+    }
+    .modal-login .modal-body form{
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+    .modal-login .modal-body .col-form-label{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #495464;
+    }
+    .modal-login .modal-body input{
+      border-radius: 0px;
+      outline: none;
+    }
+  
+    /* Footer */
+    .modal-login .modal-footer{
+      border: 0 solid #F4F4F2;
+      padding-top: 0px;
+      height: 120px;
+    }
+    .modal-login .modal-footer button{
+      margin: 0px;
+      width: 150px;
+      height: 50px;
+      background-color: rgba(73, 84, 100, .8);
+      color: #F4F4F2;
+      border-radius: 0px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 32px;
+      text-decoration: none;
+      border: 0 solid rgb(73, 84, 100);
+      transition: .3s;
+      outline: rgba(73, 84, 100, 1);
+    }
+    .modal-login .modal-footer button:hover{
+      background-color: rgba(73, 84, 100, 1);
+      color: #F4F4F2;
+    }
+    .modal-login .modal-footer button:visited{
+      background-color: rgba(73, 84, 100, .9);
+      color: #F4F4F2;
+      text-decoration: none;
+      border: none;
+      outline: rgba(73, 84, 100, 1);
+    }
+    .modal-login .modal-footer button:focus{
+      color: #F4F4F2;
+      border: 0;
+      outline: none;
+    }
+    .modal-login .modal-footer button:active{
+      color: #F4F4F2;
+      outline: none;
+      border: none;
+    }
+    .modal-login .modal-footer.member-login-forgot{
+      height: 50px;
+    }
+    .modal-login .modal-footer a{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      font-style: italic;
+      color: black;
+      transition: .2s;
+    }
+    .modal-login .modal-footer a:hover{
+      text-decoration: none;
+      color: red;
+    }
+  
+    /* MODAL REGISTER*/
+    .modal-register .modal-dialog .modal-content{
+      width: 600px;
+      height: 600px;
+      background-color: #F4F4F2;
+      top: 100px;
+      right: 50px;
+      border: 1px solid F4F4F2;
+      border-radius: 0;
+    }
+  
+    /* Header */
+    .modal-register .modal-header{
+      border: 0 solid #F4F4F2;
+      margin-bottom: 0px;
+      margin-left: 48px;
+      padding-bottom: 10px;
+      padding-left: 0px;
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .modal-register .modal-header h5{
+      font-size: 27px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .modal-register .modal-header h5 a{
+      text-decoration: none;
+    }
+    .modal-register .modal-header .login{
+      width: 250px;
+      cursor: pointer;
+    }
+    .modal-register .modal-header .login a{
+      color: rgba(73, 84, 100, .7);
+    }
+    .modal-register .modal-header .login a:hover{
+      color: rgb(73, 84, 100)
+    }
+    .modal-register .modal-header .register{
+      font-style: italic;
+      font-weight: 900;
+      width: 250px;
+    }
+    .modal-register .modal-header .register a{
+      color: rgb(73, 84, 100);
+    }
+    .modal-register .modal-header .close{
+      margin-left: 0px;
+      border: none;
+    }
+    .modal-register .modal-header button:active{
+      border: 0;
+      outline: none;
+    }
+    .modal-register .modal-header button:visited{
+      border: 0;
+      outline: none;
+    }
+    .modal-register .modal-header button:focus{
+      border: 0;
+      outline: none;
+    }
+  
+    /* HR */
+    .modal-register hr{
+      border-top: 5px solid #495464;
+      width: 500px;
+      margin-top: 0px;
+  
+      /* Body */
+    }
+  
+    /* Body */
+    .modal-register .modal-body{
+      border: 0 solid #F4F4F2;
+      padding-bottom: 0px;
+      height: 220px;
+    }
+    .modal-register .modal-body form{
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+    .modal-register .modal-body .col-form-label{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      color: #495464;
+    }
+    .modal-register .modal-body input{
+      border-radius: 0px;
+      outline: none;
+    }
+  
+    /* Footer */
+    .modal-register .modal-footer{
+      border: 0 solid #F4F4F2;
+      padding-top: 0px;
+      height: 120px;
+    }
+    .modal-register .modal-footer button{
+      margin: 0px;
+      width: 150px;
+      height: 50px;
+      background-color: rgba(73, 84, 100, .8);
+      color: #F4F4F2;
+      border-radius: 0px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      line-height: 32px;
+      text-decoration: none;
+      border: 0 solid rgb(73, 84, 100);
+      transition: .3s;
+      outline: rgba(73, 84, 100, 1);
+    }
+    .modal-register .modal-footer button:hover{
+      color: #F4F4F2;
+      background-color: rgba(73, 84, 100, 1);
+    }
+    .modal-register .modal-footer button:visited{
+      color: #F4F4F2;
+      background-color: rgba(73, 84, 100, .9);
+      text-decoration: none;
+      border: none;
+      outline: rgba(73, 84, 100, 1);
+    }
+    .modal-register .modal-footer button:focus{
+      color: #F4F4F2;
+      border: 0;
+      outline: none;
+    }
+    .modal-register .modal-footer button:active{
+      color: #F4F4F2;
+      outline: none;
+      border: none;
+    }
+  
+  
+    /* NAVBAR */
+    .navbar{
+      top: -10px;
+      height: 80px;
+    }
+    .navbar-brand{
+      font-family: 'Fredoka One', cursive;
+      font-size: 50px;
+    }
+    .navbar .header-1{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 27px;
+      margin-left: 30px;
+      font-weight: bold;
+    }
+    .navbar .nav-promotion{
+      margin-left: 20px;
+    }
+    .navbar .nav-catalogue{
+      margin-left: 20px;
+    }
+    .navbar .header-1 .nav-link{
+      transition: .3s;
+    }
+    .navbar .header-1 .underline:hover::after{
+      content: '';
+      display: block;
+      border-bottom: 3px solid white;
+      width: 60%;
+      margin: auto;
+      padding-bottom: 1px;
+      margin-bottom: -4px;
+    }
+    .navbar .header-1 .nav-link:hover{
+      transform: scale(1.05);
+    }
+    .navbar .header-2 .nav-link{
+      margin-left: 20px;
+      transition: .3s;
+      cursor: pointer;
+    }
+    .navbar .header-2 .nav-link:hover{
+      transform: scale(1.2);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+    .navbar.scrolled{
+      background-color: #495464;
+      transition: background-color 200ms linear;
+    }
+    .nav-catalogue-page{
+      background-color: rgba(63, 62, 62, 1);
+    }
+  
+    /* TEXT SHADOW */
+    .navbar .navbar-brand,
+    .slider-inner .header-1{
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    }
+    .navbar .nav-link{
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+    .slider-inner .header-2{
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+    
+    /* SLIDER */
+    .carousel{
+      position: relative;
+      height: 700px;
+      margin-bottom: 80pxpx;
+    }
+    .slider-inner .header-1{
+      z-index: 1;
+      position: relative;
+      font-family: 'Fredoka One', cursive;
+      font-size: 106px;
+    }
+    .slider-inner .header-2{
+      z-index: 1;
+      position: relative;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 50px;
+      font-style: italic;
+      font-weight: bold;
+      letter-spacing: 2px;
+      word-spacing: 6px;
+      margin-top: -20px;
+    }
+    .slider-1{
+      background-image: url(./IMG/Slider/Slider-1.JPG);
+      background-size: cover;
+      height: 820px;
+      margin-top: -30px;
+      padding-top: 200px;
+      margin-bottom: 0px;
+    }
+    .slider-1 .header-1{
+      bottom: 180px;
+      left: 300px	
+    }
+    .slider-1 .header-2{
+      bottom: 180px;
+      left: 300px	
+    }
+    .slider-2{
+      background-image: url(./IMG/Slider/Slider-2.JPG);
+      background-size: cover;
+      height: 820px;
+      margin-top: -30px;
+      padding-top: 100px;
+      margin-bottom: 0px;
+    }
+    .slider-2 .header-1{
+      bottom: 450px;
+      right: 350px	
+    }
+    .slider-2 .header-2{
+      bottom: 420px;
+      right: 520px;
+    }
+    .slider-3{
+      background-image: url(./IMG/Slider/Slider-3.JPG);
+      background-size: cover;
+      height: 820px;
+      margin-top: -30px;
+      padding-top: 200px;
+      margin-bottom: 0px;
+    }
+    .slider-3 .header-1{
+      bottom: 100px;
+      right: 400px;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);	
+    }
+    .slider-3 .header-2{
+      bottom: 100px;
+      right: 450px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    }
+    .slider-4{
+      background-image: url(./IMG/Slider/Slider-4.JPG);
+      background-size: cover;
+      height: 820px;
+      margin-top: -30px;
+      padding-top: 200px;
+      margin-bottom: 0px;
+    }
+    .slider-4 .header-1{
+      bottom: 450px;
+      left: 320px;
+    }
+    .slider-4 .header-2{
+      bottom: 420px;
+      left: 320px;
+    }
+    
+    /* COLLECTION */
+    .collection{
+      margin-top: 70px;
+      height: 1350px;
+      padding-top: 70px;
+      background-color: #BBBFCA;
+      text-align: center;
+      font-family: 'Fredoka One', cursive;
+      font-size: 65px;
+    }
+    .collection h3{
+      font-size: 50px;
+      color: #F4F4F2;
+      text-shadow: 1px 1px 2px black;
+      padding-bottom: 50px;
+    }
+    .collection img{
+      width: 800px;
+      border-radius: 3px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+      transition: .3s;
+    }
+    .collection img:hover{
+      transform: scale(1.1);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    }
+    .collection img:hover + p{
+      transform: scale(1.1);
+    }
+    .collection .col a{
+      text-decoration: none;
+      color: white;
+    }
+    .collection .spring{
+      margin-bottom: 50px;
+    }
+    .collection .spring p{
+      position: absolute;
+      left: 400px;
+      bottom: -15px;
+      text-shadow: 1px 1px 5px black;
+      transition: .3s;
+    }
+    .collection .fall p{
+      position: absolute;
+      right: 400px;
+      bottom: -15px;
+      text-shadow: 1px 1px 5px black;
+      transition: .3s;
+    }
+  
+    /* FOOTER */
+    .footer{
+      height: 139px;
+      background-color: #495464;
+      padding-top: 10px;
+      color:  #F4F4F2;
+    }
+    .footer h4{
+      margin-left: 20px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      text-align: justify;
+    }
+    .footer h4 span{
+      font-family: 'Fredoka One', cursive;
+      font-weight: 500;
+      font-size: 40px;
+    }
+    .footer .contact{
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .footer .contact-header{
+      padding-top: 15px;
+      font-family: 'Fredoka One', cursive;
+      font-weight: 500;
+      font-size: 24px;
+    }
+    .footer .bangjo{
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 0px;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+    }
+    .footer .contact-address{
+      margin-bottom: 0px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
